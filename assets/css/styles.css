@@ -8,8 +8,8 @@
   /* Primary */
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
-  --white: #fff;
-  --black: #000;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
 
   /* Neutral */
   --very-pale-blue: hsl(225, 100%, 98%);
@@ -56,8 +56,7 @@ a {
   font-weight: 500;
 }
 
-a:hover,
-a:active {
+a:hover {
   opacity: 0.8;
   text-decoration: none;
 }
@@ -67,8 +66,7 @@ a:active {
   color: var(--white);
   box-shadow: 0 1rem 1rem var(--pale-blue);
 }
-.primary:hover,
-.primary:active {
+.primary:hover {
   opacity: 0.8;
 }
 
@@ -142,7 +140,7 @@ a:active {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
   body {
     background-image: url("../images/pattern-background-mobile.svg");
     background-color: var(--pale-blue);
